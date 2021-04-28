@@ -9,8 +9,6 @@ import numpy as np
 def index(request):
     return render(request, 'first_component/index.html')
 
-def about(request):
-    return render(request, 'first_component/about.html')
 
 def result(request):
     return render(request, 'first_component/result.html')
@@ -73,12 +71,12 @@ def predict(request):
                 pred = form.save(commit=False)
 
                 
-                l=[predictions['MLP']]
+                l=[predictions['MLP'],predictions['SVC'], predictions['DecisionTree'], predictions['KNN'],predictions['RF']]
                 count=l.count('1')
 
                 result=False
 
-                if count == 1:
+                if count >=  3:
                         result=True
                         pred.num=1
                 elif (count == 0):
@@ -87,38 +85,13 @@ def predict(request):
                 
                 predicted = True
 
-                colors={}
-
-                if predictions['SVC']=='0':
-                         colors['SVC']="table-success"
-                elif predictions['SVC']=='1':
-                         colors['SVC']="table-danger"
-
-                if predictions['DecisionTree']=='0':
-                         colors['DT']="table-success"
-                else:
-                         colors['DT']="table-danger"
-                
-                if predictions['KNN']=='0':
-                         colors['KNN']="table-success"
-                else:
-                         colors['KNN']="table-danger"
-                
-                if predictions['RF']=='0':
-                         colors['RF']="table-success"
-                else:
-                         colors['RF']="table-danger"
-                
-                if predictions['MLP']=='0':
-                        colors['MLP']="table-success"
-                else:
-                        colors['MLP']="table-danger"
+               
 
 
 
     if predicted:
         return render(request, 'first_component/result.html',
-               {'predicted': predicted,'predictions':predictions,'result':result,'colors':colors})
+               {'predicted': predicted,'predictions':predictions,'result':result})
 
 
     else:
