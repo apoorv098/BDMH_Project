@@ -22,9 +22,8 @@ Screenshots:
 ![SS2](https://github.com/apoorv098/BDMH_Project/blob/main/ScreenShots/SS_2.PNG)
 ![SS3](https://github.com/apoorv098/BDMH_Project/blob/main/ScreenShots/SS_3.PNG)
 ![SS4](https://github.com/apoorv098/BDMH_Project/blob/main/ScreenShots/SS_4.PNG)
-![SS5](https://github.com/apoorv098/BDMH_Project/blob/main/ScreenShots/SS_5.PNG)
 ![SS6](https://github.com/apoorv098/BDMH_Project/blob/main/ScreenShots/SS_6.PNG)
 ![SS7](https://github.com/apoorv098/BDMH_Project/blob/main/ScreenShots/SS_7.PNG)
-
+![SS8](https://github.com/apoorv098/BDMH_Project/blob/main/ScreenShots/SS_8.PNG)
       
       
