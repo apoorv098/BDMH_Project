@@ -26,7 +26,6 @@ pyparsing==2.4.7
 python-dateutil==2.8.1
 pytz
 PyWavelets==1.1.1
-pywin32==300
 pyzmq==22.0.3
 scikit-image==0.18.1
 scikit-learn==0.22.2.post1
