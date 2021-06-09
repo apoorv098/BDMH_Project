@@ -1,6 +1,7 @@
 # BDMH_Project
 This repo contains code about heart disease prediction system using Machine Learning and website development using Django
 
+This project has been done as part of Winter Semester Course BDMH at IIITD.
 Steps to run:
 1. **create a virtual environment using:** </br>
              conda create --name <name_of_env> django
